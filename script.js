@@ -97,24 +97,28 @@
 //     console.log(i);
 //     i++;
 // }
+
 // 	23.	Create a for...of loop to log each character of the string "JavaScript".
 // var value = "JavaScript";
 // for(var charc of value)
 // {
 //     console.log(charc);
 // }
+
 // 	24.	Write a for loop that skips even numbers between 1 and 20.
 // for(let i = 0; i < 20; i++)
 // {
 //     if(i%2!=0)
 //         console.log(i);
 // }
+
 // 	25.	Use a do...while loop to log numbers from 5 to 1.
 // let i=1;
 // do{
 //     console.log(i);
 //     i++;
 // }while(i<6);
+
 // 	26.	Create a for loop that calculates the factorial of 5.
 // let num=5;
 // let res =1;
@@ -133,12 +137,14 @@
 //     console.log(grid[i][j]);
 //  }
 // }
+
 // 	28.	Use a for loop to reverse an array [1, 2, 3, 4].
 // var arr = [1, 2, 3, 4];
 // for(let i=arr.length-1; i>=0; i--)
 // {
 //     console.log(arr[i]);
 // }
+
 // 	29.	Write a while loop that logs numbers from 1 to 100 divisible by 5.
 // let n=1;
 // while(n<=100)
@@ -147,6 +153,7 @@
 //         console.log(n," is divisible by 5");
 //     n++;
 // }
+
 // 	30.	Use a for...in loop to iterate over an object and log its keys.
 // var obj = {
 //     name:"Dheeraj",
@@ -155,6 +162,7 @@
 // for(var key in obj) {
 //     console.log(key)
 // }
+
 // 4. Arrays (10 Questions)
 // 	31.	Create an array of your top 5 favorite movies and log it.
 // let movies = ["A","B","C","D","E"];
@@ -218,6 +226,7 @@
 //     return "odd";
 // }
 // console.log(isEvenOrOdd("5"));
+
 // 	42.	Create a function to calculate the area of a circle with a given radius.
 // function area(radius) {
 //     console.log(Math.PI);
@@ -418,6 +427,7 @@
 //     city: "Bhopal"
 // }
 // console.log(obj);
+
 // 	62.	Add a new property isStudent to the object above and set it to true.
 // var obj = {
 //     name:"Dheeraj",
@@ -456,6 +466,7 @@
 //     }
 // ]
 // console.log(books);
+
 // 	67.	Access and log the author of the second book in the array.
 // console.log(books[1].author);
 
@@ -464,14 +475,13 @@
 // {
 //     console.log("key exist");
 // }
-
+//     or
 // console.log(books[0].hasOwnProperty("author")) // gives true
-
+// or
 // let key  = "author" in books[0];
 // console.log(key);
 
 // 	69.	Create a function to count the number of keys in an object.
-
 // var obj = {
 //         name:"Dheeraj",
 //         age: 20,
@@ -498,6 +508,7 @@
 // 	71.	Create a string and log its length.
 // let name = "Dheeraj";
 // console.log(name.length);
+
 // 	72.	Extract the last 4 characters of a string.
 // console.log(name.slice(name.length - 4, name.length));
 // console.log(name.substring(name.length-4, name.length));
@@ -545,6 +556,7 @@
 //         count++;
 // }
 // console.log(count);
+
 // Mixed Practice (20 Questions)
 // 	81.	Write a function that accepts an array of numbers and returns only the even numbers.
 // function evenNumbers(arr)
@@ -727,6 +739,37 @@
 // console.log(newarr);
 
 // 	97.	Write a program to merge two sorted arrays into one sorted array.
+// var arr1 = [1,2,3,4,5];
+// var arr2 = [3,5,7,8];
+// var arr3=[];
+// let i=0,j=0;
+// let n1 = arr1.length;
+// let n2 = arr2.length;
+// while(i<n1 && j<n2)
+// {
+//     if(arr1[i]<arr2[j])
+//     {
+//         arr3.push(arr1[i]);
+//         i++;
+//     }
+//     else
+//     {
+//         arr3.push(arr2[j]);
+//         j++;
+//     }
+// }
+// while(i<n1)
+// {
+//     arr3.push(arr1[i]);
+//     i++;
+// }
+// while(j<n2)
+// {
+//     arr3.push(arr2[j]);
+//     j++;
+// }
+// console.log(arr3);
+
 // 	98.	Create a function to count the number of words in a string.
 // let str = "hello world hello world and world";
 // function count(str,match) {
@@ -747,18 +790,18 @@
 // });
 
 // 	100.	Write a function to check if all elements in an array are greater than a specific value.
-let arr = [12, 13, 14, 15];
-let val = 110;
-let flag=1;
-for (let i = 0; i < arr.length; i++){
-    if(arr[i] < val){
-        console.log("not all");
-        flag=0;
-        break;
-    }
-}
-if(flag==1)
-    console.log(" yes all");
+// let arr = [12, 13, 14, 15];
+// let val = 110;
+// let flag=1;
+// for (let i = 0; i < arr.length; i++){
+//     if(arr[i] < val){
+//         console.log("not all");
+//         flag=0;
+//         break;
+//     }
+// }
+// if(flag==1)
+//     console.log(" yes all");
 
 
 // These questions cover a wide range of fundamental JavaScript concepts. Let me know if you’d like further clarification or solutions for any of these!
